@@ -79,36 +79,3 @@ if __name__ == "__main__":
                         f.close()
                         flag = True
                         break
-        # if flag:
-        #     break
-
-    # pem1 = open("../RSA Challenge (trial)/public2.pem").read()
-    # k1 = RSA.importKey(pem1)
-    # n1 = k1.n
-    # e1 = k1.e
-    #
-    # pem2 = open("../RSA Challenge (trial)/public3.pem").read()
-    # k2 = RSA.importKey(pem2)
-    # n2 = k2.n
-    # e2 = k2.e
-    #
-    # print("n1: ", n1)
-    # print("e1: ", e1)
-    # print("n2: ", n2)
-    # print("e2: ", e2)
-    #
-    # p = math.gcd(n1, n2)
-    # q = n2 // p
-    # phi = (p - 1) * (q - 1)
-    # d = modinv(e1, phi)
-    # print(d)
-    # print(hex(d))
-    #
-    # dP = d % p
-    # dQ = d % q
-    # qInv = pow(q, p - 2, p)
-    # key = pempriv(n2, e1, d, p, q, dP, dQ, qInv)
-    # print(key)
-    # f = open("../RSA Challenge (trial)/key3.pem", "w")
-    # f.write(key)
-    # f.close()
